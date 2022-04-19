@@ -1,0 +1,29 @@
+New Loadshape.ev_cliente_1 npts=43200 sinterval=2 mult=(file=autos\auto1control.dss) useactual=no
+New Loadshape.ev_cliente_2 npts=43200 sinterval=2 mult=(file=autos\auto2control.dss) useactual=no
+New Loadshape.ev_cliente_3 npts=43200 sinterval=2 mult=(file=autos\auto3control.dss) useactual=no
+New Loadshape.ev_cliente_4 npts=43200 sinterval=2 mult=(file=autos\auto4control.dss) useactual=no
+New Loadshape.ev_cliente_5 npts=43200 sinterval=2 mult=(file=autos\auto5control.dss) useactual=no
+New Loadshape.ev_cliente_6 npts=43200 sinterval=2 mult=(file=autos\auto6control.dss) useactual=no
+New Loadshape.ev_cliente_7 npts=43200 sinterval=2 mult=(file=autos\auto7control.dss) useactual=no
+New Loadshape.ev_cliente_8 npts=43200 sinterval=2 mult=(file=autos\auto8control.dss) useactual=no
+New Loadshape.ev_cliente_9 npts=43200 sinterval=2 mult=(file=autos\auto9control.dss) useactual=no
+New Loadshape.ev_cliente_10 npts=43200 sinterval=2 mult=(file=autos\auto10control.dss) useactual=no
+New Loadshape.ev_cliente_11 npts=43200 sinterval=2 mult=(file=autos\auto11control.dss) useactual=no
+New Loadshape.ev_cliente_12 npts=43200 sinterval=2 mult=(file=autos\auto12control.dss) useactual=no
+New Loadshape.ev_cliente_13 npts=43200 sinterval=2 mult=(file=autos\auto13control.dss) useactual=no
+New Loadshape.ev_cliente_14 npts=43200 sinterval=2 mult=(file=autos\auto14control.dss) useactual=no
+
+new load.ev_cliente_1 bus1=70.1 kv=0.23 conn=wye kW=1 pf=1 status=variable phases=1 daily=ev_cliente_1
+new load.ev_cliente_2 bus1=178.2 kv=0.23 conn=wye kW=1 pf=1 status=variable phases=1 daily=ev_cliente_2
+new load.ev_cliente_3 bus1=249.2 kv=0.23 conn=wye kW=1 pf=1 status=variable phases=1 daily=ev_cliente_3
+new load.ev_cliente_4 bus1=289.1 kv=0.23 conn=wye kW=1 pf=1 status=variable phases=1 daily=ev_cliente_4
+new load.ev_cliente_5 bus1=556.3 kv=0.23 conn=wye kW=1 pf=1 status=variable phases=1 daily=ev_cliente_5
+new load.ev_cliente_6 bus1=785.2 kv=0.23 conn=wye kW=1 pf=1 status=variable phases=1 daily=ev_cliente_6
+new load.ev_cliente_7 bus1=688.2 kv=0.23 conn=wye kW=1 pf=1 status=variable phases=1 daily=ev_cliente_7
+new load.ev_cliente_8 bus1=861.1 kv=0.23 conn=wye kW=1 pf=1 status=variable phases=1 daily=ev_cliente_8
+new load.ev_cliente_9 bus1=813.2 kv=0.23 conn=wye kW=1 pf=1 status=variable phases=1 daily=ev_cliente_9
+new load.ev_cliente_10 bus1=886.2 kv=0.23 conn=wye kW=1 pf=1 status=variable phases=1 daily=ev_cliente_10
+new load.ev_cliente_11 bus1=639.2 kv=0.23 conn=wye kW=1 pf=1 status=variable phases=1 daily=ev_cliente_11
+new load.ev_cliente_12 bus1=611.1 kv=0.23 conn=wye kW=1 pf=1 status=variable phases=1 daily=ev_cliente_12
+new load.ev_cliente_13 bus1=629.1 kv=0.23 conn=wye kW=1 pf=1 status=variable phases=1 daily=ev_cliente_13
+new load.ev_cliente_14 bus1=388.1 kv=0.23 conn=wye kW=1 pf=1 status=variable phases=1 daily=ev_cliente_14

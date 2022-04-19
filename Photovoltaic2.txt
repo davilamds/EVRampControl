@@ -1,0 +1,6 @@
+New XYCurve.PvsT npts=4 csvfile=fotovoltaico\PvsT.dss
+New XYCurve.EffvsP npts=6 csvfile=fotovoltaico\EffvsP.dss
+New LoadShape.Radiacion npts=86400 sinterval=1 mult=(file=fotovoltaico\Pot_Sep_28.txt) useactual=no
+New Tshape.Temperatura npts=144 minterval=10 csvfile=fotovoltaico\Temperatura.dss
+
+new PVSystem.pv_cliente_7 bus1=898.1 kv=0.23 phases=1 kVA=70.00 pf=1 conn=wye irrad=1 Pmpp=1.25 temperature=14 effcurve=EffvsP P-TCurve=PvsT Daily=Radiacion TDaily=Temperatura %cutin=0

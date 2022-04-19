@@ -1,0 +1,19 @@
+New XYCurve.PvsT npts=4 csvfile=fotovoltaico\PvsT.dss
+New XYCurve.EffvsP npts=6 csvfile=fotovoltaico\EffvsP.dss
+New LoadShape.Radiacion npts=86400 sinterval=1 mult=(file=fotovoltaico\Pot_Sep_28.txt) useactual=no
+New Tshape.Temperatura npts=144 minterval=10 csvfile=fotovoltaico\Temperatura.dss
+
+new PVSystem.pv_cliente_1 bus1=34.1 kv=0.23 phases=1 kVA=5.00 pf=1 conn=wye irrad=1 Pmpp=5.00 temperature=14 effcurve=EffvsP P-TCurve=PvsT Daily=Radiacion TDaily=Temperatura %cutin=0
+new PVSystem.pv_cliente_2 bus1=208.3 kv=0.23 phases=1 kVA=5.00 pf=1 conn=wye irrad=1 Pmpp=3.50 temperature=14 effcurve=EffvsP P-TCurve=PvsT Daily=Radiacion TDaily=Temperatura %cutin=0
+new PVSystem.pv_cliente_3 bus1=458.3 kv=0.23 phases=1 kVA=5.00 pf=1 conn=wye irrad=1 Pmpp=4.25 temperature=14 effcurve=EffvsP P-TCurve=PvsT Daily=Radiacion TDaily=Temperatura %cutin=0
+new PVSystem.pv_cliente_4 bus1=522.2 kv=0.23 phases=1 kVA=5.00 pf=1 conn=wye irrad=1 Pmpp=1.75 temperature=14 effcurve=EffvsP P-TCurve=PvsT Daily=Radiacion TDaily=Temperatura %cutin=0
+new PVSystem.pv_cliente_5 bus1=817.1 kv=0.23 phases=1 kVA=5.00 pf=1 conn=wye irrad=1 Pmpp=2.25 temperature=14 effcurve=EffvsP P-TCurve=PvsT Daily=Radiacion TDaily=Temperatura %cutin=0
+new PVSystem.pv_cliente_6 bus1=702.2 kv=0.23 phases=1 kVA=5.00 pf=1 conn=wye irrad=1 Pmpp=3.25 temperature=14 effcurve=EffvsP P-TCurve=PvsT Daily=Radiacion TDaily=Temperatura %cutin=0
+new PVSystem.pv_cliente_7 bus1=898.1 kv=0.23 phases=1 kVA=5.00 pf=1 conn=wye irrad=1 Pmpp=1.25 temperature=14 effcurve=EffvsP P-TCurve=PvsT Daily=Radiacion TDaily=Temperatura %cutin=0
+new PVSystem.pv_cliente_8 bus1=682.2 kv=0.23 phases=1 kVA=5.00 pf=1 conn=wye irrad=1 Pmpp=1.5 temperature=14 effcurve=EffvsP P-TCurve=PvsT Daily=Radiacion TDaily=Temperatura %cutin=0
+new PVSystem.pv_cliente_9 bus1=502.1 kv=0.23 phases=1 kVA=5.00 pf=1 conn=wye irrad=1 Pmpp=2.75 temperature=14 effcurve=EffvsP P-TCurve=PvsT Daily=Radiacion TDaily=Temperatura %cutin=0
+new PVSystem.pv_cliente_10 bus1=406.2 kv=0.23 phases=1 kVA=5.00 pf=1 conn=wye irrad=1 Pmpp=5.25 temperature=14 effcurve=EffvsP P-TCurve=PvsT Daily=Radiacion TDaily=Temperatura %cutin=0
+new PVSystem.pv_cliente_11 bus1=349.1 kv=0.23 phases=1 kVA=5.00 pf=1 conn=wye irrad=1 Pmpp=5.5 temperature=14 effcurve=EffvsP P-TCurve=PvsT Daily=Radiacion TDaily=Temperatura %cutin=0
+new PVSystem.pv_cliente_12 bus1=387.1 kv=0.23 phases=1 kVA=5.00 pf=1 conn=wye irrad=1 Pmpp=5.75 temperature=14 effcurve=EffvsP P-TCurve=PvsT Daily=Radiacion TDaily=Temperatura %cutin=0
+new PVSystem.pv_cliente_13 bus1=289.1 kv=0.23 phases=1 kVA=5.00 pf=1 conn=wye irrad=1 Pmpp=2.25 temperature=14 effcurve=EffvsP P-TCurve=PvsT Daily=Radiacion TDaily=Temperatura %cutin=0
+new PVSystem.pv_cliente_14 bus1=327.3 kv=0.23 phases=1 kVA=5.00 pf=1 conn=wye irrad=1 Pmpp=1 temperature=14 effcurve=EffvsP P-TCurve=PvsT Daily=Radiacion TDaily=Temperatura %cutin=0

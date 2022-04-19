@@ -1,0 +1,84 @@
+
+  Bus   (node ref)  Node       V (kV)    Angle    p.u.   Base kV
+
+1 ......... 1      0.25163 /_  -30.1    1.0477     0.416        1-2     0.4359 /_    0.0    1.0478
+   -        2      0.25199 /_ -150.0    1.0492     0.416        2-3    0.43665 /_ -120.0    1.0496
+   -        3      0.25192 /_   89.9    1.0489     0.416        3-1     0.4361 /_  119.9    1.0483
+
+CIRCUIT ELEMENT CURRENTS
+
+(Currents into element from indicated bus)
+
+Power Delivery Elements
+
+  Bus         Phase    Magnitude, A     Angle      (Real)   +j  (Imag)
+
+ELEMENT = "Line.LINE1"
+1               1           60.775 /_  -72.7 =     18.073 +j   -58.026
+1               2           17.093 /_   92.0 =   -0.58585 +j    17.083
+1               3           41.294 /_   59.4 =     20.999 +j    35.556
+1           Resid           38.862 /_  172.0 =     -38.487 +j    5.3878
+------------
+2               1           60.775 /_  107.3 =    -18.073 +j    58.026
+2               2           17.093 /_  -88.0 =    0.58585 +j   -17.083
+2               3           41.294 /_ -120.6 =    -20.999 +j   -35.556
+2           Resid           38.862 /_   -8.0 =      38.487 +j   -5.3878
+
+
+ELEMENT = "Transformer.TR1"
+SOURCEBUS       1           1.6898 /_  -76.0 =     0.4074 +j     -1.64
+SOURCEBUS       2          0.62034 /_ -139.4 =   -0.47133 +j  -0.40332
+SOURCEBUS       3           2.0443 /_   88.2 =    0.06393 +j    2.0433
+SOURCEBUS       0                0 /_    0.0 =          0 +j         0
+SOURCEBUS   Resid      2.0495E-013 /_  146.3 =   -1.7053E-013 +j 1.1369E-013
+------------
+1               1           60.775 /_  107.3 =    -18.073 +j    58.026
+1               2           17.093 /_  -88.0 =    0.58585 +j   -17.083
+1               3           41.294 /_ -120.6 =    -20.999 +j   -35.556
+1               0           38.862 /_   -8.0 =     38.487 +j   -5.3878
+1           Resid      7.8112E-007 /_  -13.7 =   7.5896E-007 +j -1.8473E-007
+
+
+= = = = = = = = = = = = = = = = = = =  = = = = = = = = = = =  = =
+
+Power Conversion Elements
+
+  Bus         Phase    Magnitude, A     Angle      (Real)   +j  (Imag)
+
+
+CIRCUIT ELEMENT POWER FLOW
+
+(Power Flow into element from indicated Bus)
+
+  Bus       Phase     kW     +j   kvar           kVA           PF
+
+ELEMENT = "Line.LINE1"            
+1               1     11.256 +j     10.353        15.293      0.7360
+1               2    -2.0259 +j     3.8011        4.3073     -0.4703
+1               3     8.9655 +j     5.2763        10.403      0.8618
+ TERMINAL TOTAL       18.196 +j      19.43         26.62      0.6835
+------------
+ELEMENT = "Line.LINE1"            
+2               1    -11.254 +j    -10.352        15.291      0.7360
+2               2      2.026 +j    -3.8013        4.3075     -0.4703
+2               3    -8.9644 +j    -5.2767        10.402      0.8618
+ TERMINAL TOTAL      -18.192 +j     -19.43        26.617      0.6835
+ELEMENT = "Transformer.TR1"       
+1               1    -11.256 +j    -10.353        15.293      0.7360
+1               2     2.0259 +j    -3.8011        4.3073     -0.4703
+1               3    -8.9655 +j    -5.2763        10.403      0.8618
+1               0          0 +j          0             0      1.0000
+ TERMINAL TOTAL      -18.196 +j     -19.43         26.62      0.6835
+------------
+ELEMENT = "Transformer.TR1"       
+SOURCEBUS       1     2.7153 +j      10.93        11.262      0.2411
+SOURCEBUS       2     3.9005 +j     1.3764        4.1362      0.9430
+SOURCEBUS       3     11.585 +j     7.1734        13.626      0.8502
+SOURCEBUS       0          0 +j          0             0      1.0000
+ TERMINAL TOTAL       18.201 +j      19.48         26.66      0.6827
+= = = = = = = = = = = = = = = = = = =  = = = = = = = = = = =  = =
+
+Power Conversion Elements
+
+  Bus         Phase     kW   +j  kvar         kVA         PF
+
